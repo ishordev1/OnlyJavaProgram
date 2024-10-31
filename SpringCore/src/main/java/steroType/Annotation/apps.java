@@ -1,0 +1,13 @@
+package steroType.Annotation;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class apps {
+	public static void main(String[] args) {
+		ApplicationContext con=new ClassPathXmlApplicationContext("steroType/Annotation/Config.xml");
+		Student st=(Student)con.getBean("student");
+		System.out.println(st);
+	}
+
+}
